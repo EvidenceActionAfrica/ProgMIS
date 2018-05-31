@@ -1,0 +1,10 @@
+# Files that contain login credentials.
+
+# dsw module
+dsw/application/config/*
+
+# dtw module
+dtw/includes/db.php
+dtw/includes/config.php
+dtw/includes/db_class.php
+dtw/includes/db_conf.php
