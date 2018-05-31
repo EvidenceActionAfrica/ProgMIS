@@ -1,0 +1,21 @@
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/exporting.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/jspdf.js"></script>
+<script src="js/jspdf.plugin.addimage.js"></script>
+<script src="js/jspdf.plugin.autoprint.js"></script>
+<script src="js/jspdf.plugin.cell.js"></script>
+<script src="js/jspdf.plugin.from_html.js"></script>
+<script src="js/jspdf.plugin.javascript.js"></script>
+<script src="js/jspdf.plugin.sillysvgrenderer.js"></script>
+<script src="js/jspdf.plugin.split_text_to_size.js"></script>
+<script src="js/jspdf.plugin.standard_fonts_metrics.js"></script>
+<script src="js/jspdf.plugin.total_pages.js"></script>
+<script src="js/jspdf.PLUGINTEMPLATE.js"></script>
+<script src="js/html2canvas.js"></script>
+<script src="js/canvg.js"></script>
+<!-- canvg -->
+<script src="js/canvg/rgbcolor.js"></script>
+<script src="js/canvg/StackBlur.js"></script>
+<script src="js/canvg/canvg.js"></script> 

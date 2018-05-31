@@ -1,0 +1,21 @@
+#top_line_mark_county {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 42%;
+  top: 15px;
+  height: 232px;
+  border-left: 1px dashed #00F;
+}
+
+
+#top_line_container_county, #bottom_line_container_county {
+  width: 5%;
+  text-align: center;
+  position: relative;
+  /*left: 34.2%;*/
+  left: 41.2%;
+  z-index: 1;
+}

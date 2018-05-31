@@ -1,0 +1,163 @@
+[19-Aug-2014 05:34:10 America/Denver] PHP Fatal error:  Call to undefined function reporting_on_school_division() in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 739
+[20-Aug-2014 04:43:47 America/Denver] PHP Notice:  Undefined index: staff_email in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 20
+[20-Aug-2014 04:43:47 America/Denver] PHP Notice:  Undefined variable: priv_ciff_kpi in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 31
+[20-Aug-2014 04:43:47 America/Denver] PHP Notice:  Undefined variable: priv_ciff_report in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 31
+[20-Aug-2014 04:43:47 America/Denver] PHP Notice:  Undefined variable: priv_end_fund in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 31
+[20-Aug-2014 04:43:47 America/Denver] PHP Notice:  Undefined variable: priv_ntd in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 31
+[20-Aug-2014 04:43:47 America/Denver] PHP Notice:  Undefined variable: priv_usaid in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 31
+[20-Aug-2014 04:43:47 America/Denver] PHP Notice:  Undefined variable: priv_who in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 31
+[21-Aug-2014 09:08:24 America/Denver] PHP Notice:  Undefined index: staff_email in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 20
+[21-Aug-2014 09:08:24 America/Denver] PHP Notice:  Undefined variable: priv_ciff_kpi in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 31
+[21-Aug-2014 09:08:24 America/Denver] PHP Notice:  Undefined variable: priv_ciff_report in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 31
+[21-Aug-2014 09:08:24 America/Denver] PHP Notice:  Undefined variable: priv_end_fund in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 31
+[21-Aug-2014 09:08:24 America/Denver] PHP Notice:  Undefined variable: priv_ntd in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 31
+[21-Aug-2014 09:08:24 America/Denver] PHP Notice:  Undefined variable: priv_usaid in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 31
+[21-Aug-2014 09:08:24 America/Denver] PHP Notice:  Undefined variable: priv_who in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 31
+[01-Sep-2014 01:33:19 America/Denver] PHP Fatal error:  Call to undefined function num_no_school_p() in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 285
+[05-Sep-2014 08:16:57 America/Denver] PHP Notice:  Undefined index: staff_email in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveCiffReport.php on line 20
+[05-Sep-2014 08:16:57 America/Denver] PHP Notice:  Undefined variable: priv_ciff_kpi in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveCiffReport.php on line 31
+[05-Sep-2014 08:16:57 America/Denver] PHP Notice:  Undefined variable: priv_ciff_report in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveCiffReport.php on line 31
+[05-Sep-2014 08:16:57 America/Denver] PHP Notice:  Undefined variable: priv_end_fund in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveCiffReport.php on line 31
+[05-Sep-2014 08:16:57 America/Denver] PHP Notice:  Undefined variable: priv_ntd in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveCiffReport.php on line 31
+[05-Sep-2014 08:16:57 America/Denver] PHP Notice:  Undefined variable: priv_usaid in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveCiffReport.php on line 31
+[05-Sep-2014 08:16:57 America/Denver] PHP Notice:  Undefined variable: priv_who in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveCiffReport.php on line 31
+[17-Sep-2014 00:39:25 America/Denver] PHP Notice:  Undefined index: database in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/includes/loginInfo.php on line 13
+[17-Sep-2014 00:39:25 America/Denver] PHP Notice:  Undefined index: staff_name in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/includes/loginInfo.php on line 22
+[17-Sep-2014 00:39:25 America/Denver] PHP Notice:  Undefined index: staff_role in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/includes/loginInfo.php on line 23
+[17-Sep-2014 05:55:35 America/Denver] PHP Notice:  Undefined index: staff_email in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveUSAID.php on line 11
+[17-Sep-2014 05:55:35 America/Denver] PHP Notice:  Undefined variable: priv_ciff_kpi in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveUSAID.php on line 22
+[17-Sep-2014 05:55:35 America/Denver] PHP Notice:  Undefined variable: priv_ciff_report in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveUSAID.php on line 22
+[17-Sep-2014 05:55:35 America/Denver] PHP Notice:  Undefined variable: priv_end_fund in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveUSAID.php on line 22
+[17-Sep-2014 05:55:35 America/Denver] PHP Notice:  Undefined variable: priv_ntd in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveUSAID.php on line 22
+[17-Sep-2014 05:55:35 America/Denver] PHP Notice:  Undefined variable: priv_usaid in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveUSAID.php on line 22
+[17-Sep-2014 05:55:35 America/Denver] PHP Notice:  Undefined variable: priv_who in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveUSAID.php on line 22
+[29-Sep-2014 00:28:40 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[29-Sep-2014 00:29:00 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[29-Sep-2014 08:40:13 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[03-Oct-2014 00:48:59 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[03-Oct-2014 00:49:52 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[03-Oct-2014 03:52:12 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[06-Oct-2014 07:36:08 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[08-Oct-2014 00:03:01 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[08-Oct-2014 06:14:56 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[09-Oct-2014 05:15:05 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[10-Oct-2014 23:40:09 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[14-Oct-2014 18:43:36 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[14-Oct-2014 18:43:36 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[23-Oct-2014 03:11:47 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[24-Oct-2014 02:13:50 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[24-Oct-2014 02:27:00 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[24-Oct-2014 02:28:59 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[24-Oct-2014 02:29:04 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[24-Oct-2014 03:24:45 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[24-Oct-2014 03:30:03 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[24-Oct-2014 03:30:23 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[27-Oct-2014 00:56:14 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[27-Oct-2014 01:17:55 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[27-Oct-2014 01:19:21 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[27-Oct-2014 01:20:47 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[27-Oct-2014 01:31:37 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[27-Oct-2014 01:31:39 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[27-Oct-2014 01:34:00 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[27-Oct-2014 01:34:06 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[27-Oct-2014 01:34:07 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[27-Oct-2014 01:35:38 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[27-Oct-2014 01:35:40 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 499
+[29-Oct-2014 07:12:24 America/Denver] PHP Notice:  Undefined index: staff_email in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 21
+[29-Oct-2014 07:12:24 America/Denver] PHP Notice:  Undefined variable: priv_ciff_kpi in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:12:24 America/Denver] PHP Notice:  Undefined variable: priv_ciff_report in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:12:24 America/Denver] PHP Notice:  Undefined variable: priv_end_fund in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:12:24 America/Denver] PHP Notice:  Undefined variable: priv_ntd in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:12:24 America/Denver] PHP Notice:  Undefined variable: priv_usaid in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:12:24 America/Denver] PHP Notice:  Undefined variable: priv_who in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:12:25 America/Denver] PHP Notice:  Undefined index: staff_email in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 21
+[29-Oct-2014 07:12:25 America/Denver] PHP Notice:  Undefined variable: priv_ciff_kpi in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:12:25 America/Denver] PHP Notice:  Undefined variable: priv_ciff_report in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:12:25 America/Denver] PHP Notice:  Undefined variable: priv_end_fund in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:12:25 America/Denver] PHP Notice:  Undefined variable: priv_ntd in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:12:25 America/Denver] PHP Notice:  Undefined variable: priv_usaid in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:12:25 America/Denver] PHP Notice:  Undefined variable: priv_who in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:17:53 America/Denver] PHP Notice:  Undefined index: staff_email in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 21
+[29-Oct-2014 07:17:53 America/Denver] PHP Notice:  Undefined variable: priv_ciff_kpi in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:17:53 America/Denver] PHP Notice:  Undefined variable: priv_ciff_report in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:17:53 America/Denver] PHP Notice:  Undefined variable: priv_end_fund in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:17:53 America/Denver] PHP Notice:  Undefined variable: priv_ntd in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:17:53 America/Denver] PHP Notice:  Undefined variable: priv_usaid in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[29-Oct-2014 07:17:53 America/Denver] PHP Notice:  Undefined variable: priv_who in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[03-Nov-2014 01:17:08 America/Denver] PHP Notice:  Undefined index: staff_email in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 21
+[03-Nov-2014 01:17:08 America/Denver] PHP Notice:  Undefined variable: priv_ciff_kpi in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[03-Nov-2014 01:17:08 America/Denver] PHP Notice:  Undefined variable: priv_ciff_report in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[03-Nov-2014 01:17:08 America/Denver] PHP Notice:  Undefined variable: priv_end_fund in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[03-Nov-2014 01:17:08 America/Denver] PHP Notice:  Undefined variable: priv_ntd in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[03-Nov-2014 01:17:08 America/Denver] PHP Notice:  Undefined variable: priv_usaid in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[03-Nov-2014 01:17:08 America/Denver] PHP Notice:  Undefined variable: priv_who in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[13-Nov-2014 05:23:28 America/Denver] PHP Notice:  Undefined index: database in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/includes/loginInfo.php on line 13
+[13-Nov-2014 05:23:28 America/Denver] PHP Notice:  Undefined index: staff_name in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/includes/loginInfo.php on line 22
+[13-Nov-2014 05:23:28 America/Denver] PHP Notice:  Undefined index: staff_role in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/includes/loginInfo.php on line 23
+[13-Nov-2014 05:23:33 America/Denver] PHP Notice:  Undefined index: staff_email in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 21
+[13-Nov-2014 05:23:33 America/Denver] PHP Notice:  Undefined variable: priv_ciff_kpi in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[13-Nov-2014 05:23:33 America/Denver] PHP Notice:  Undefined variable: priv_ciff_report in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[13-Nov-2014 05:23:33 America/Denver] PHP Notice:  Undefined variable: priv_end_fund in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[13-Nov-2014 05:23:33 America/Denver] PHP Notice:  Undefined variable: priv_ntd in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[13-Nov-2014 05:23:33 America/Denver] PHP Notice:  Undefined variable: priv_usaid in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[13-Nov-2014 05:23:33 America/Denver] PHP Notice:  Undefined variable: priv_who in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[13-Nov-2014 05:23:33 America/Denver] PHP Notice:  Undefined index: database in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/includes/loginInfo.php on line 13
+[13-Nov-2014 05:23:33 America/Denver] PHP Notice:  Undefined index: staff_name in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/includes/loginInfo.php on line 22
+[13-Nov-2014 05:23:33 America/Denver] PHP Notice:  Undefined index: staff_role in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/includes/loginInfo.php on line 23
+[17-Nov-2014 02:18:44 America/Denver] PHP Notice:  Undefined index: staff_email in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 21
+[17-Nov-2014 02:18:44 America/Denver] PHP Notice:  Undefined variable: priv_ciff_kpi in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[17-Nov-2014 02:18:44 America/Denver] PHP Notice:  Undefined variable: priv_ciff_report in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[17-Nov-2014 02:18:44 America/Denver] PHP Notice:  Undefined variable: priv_end_fund in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[17-Nov-2014 02:18:44 America/Denver] PHP Notice:  Undefined variable: priv_ntd in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[17-Nov-2014 02:18:44 America/Denver] PHP Notice:  Undefined variable: priv_usaid in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[17-Nov-2014 02:18:44 America/Denver] PHP Notice:  Undefined variable: priv_who in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[01-Dec-2014 23:35:59 America/Denver] PHP Notice:  Undefined index: staff_email in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 21
+[01-Dec-2014 23:35:59 America/Denver] PHP Notice:  Undefined variable: priv_ciff_kpi in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[01-Dec-2014 23:35:59 America/Denver] PHP Notice:  Undefined variable: priv_ciff_report in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[01-Dec-2014 23:35:59 America/Denver] PHP Notice:  Undefined variable: priv_end_fund in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[01-Dec-2014 23:35:59 America/Denver] PHP Notice:  Undefined variable: priv_ntd in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[01-Dec-2014 23:35:59 America/Denver] PHP Notice:  Undefined variable: priv_usaid in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[01-Dec-2014 23:35:59 America/Denver] PHP Notice:  Undefined variable: priv_who in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[05-Jan-2015 00:18:14 America/Denver] PHP Notice:  Undefined index: staff_email in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 21
+[05-Jan-2015 00:18:14 America/Denver] PHP Notice:  Undefined variable: priv_ciff_kpi in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[05-Jan-2015 00:18:14 America/Denver] PHP Notice:  Undefined variable: priv_ciff_report in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[05-Jan-2015 00:18:14 America/Denver] PHP Notice:  Undefined variable: priv_end_fund in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[05-Jan-2015 00:18:14 America/Denver] PHP Notice:  Undefined variable: priv_ntd in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[05-Jan-2015 00:18:14 America/Denver] PHP Notice:  Undefined variable: priv_usaid in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[05-Jan-2015 00:18:14 America/Denver] PHP Notice:  Undefined variable: priv_who in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[05-Jan-2015 00:18:25 America/Denver] PHP Notice:  Undefined index: staff_email in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 21
+[05-Jan-2015 00:18:25 America/Denver] PHP Notice:  Undefined variable: priv_ciff_kpi in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[05-Jan-2015 00:18:25 America/Denver] PHP Notice:  Undefined variable: priv_ciff_report in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[05-Jan-2015 00:18:25 America/Denver] PHP Notice:  Undefined variable: priv_end_fund in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[05-Jan-2015 00:18:25 America/Denver] PHP Notice:  Undefined variable: priv_ntd in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[05-Jan-2015 00:18:25 America/Denver] PHP Notice:  Undefined variable: priv_usaid in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[05-Jan-2015 00:18:25 America/Denver] PHP Notice:  Undefined variable: priv_who in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[08-Jan-2015 02:02:12 America/Denver] PHP Notice:  Undefined index: staff_email in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 21
+[08-Jan-2015 02:02:12 America/Denver] PHP Notice:  Undefined variable: priv_ciff_kpi in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[08-Jan-2015 02:02:12 America/Denver] PHP Notice:  Undefined variable: priv_ciff_report in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[08-Jan-2015 02:02:12 America/Denver] PHP Notice:  Undefined variable: priv_end_fund in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[08-Jan-2015 02:02:12 America/Denver] PHP Notice:  Undefined variable: priv_ntd in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[08-Jan-2015 02:02:12 America/Denver] PHP Notice:  Undefined variable: priv_usaid in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[08-Jan-2015 02:02:12 America/Denver] PHP Notice:  Undefined variable: priv_who in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[12-Jan-2015 01:56:56 America/Denver] PHP Warning:  Division by zero in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 2050
+[12-Jan-2015 02:17:19 America/Denver] PHP Warning:  Division by zero in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 2050
+[12-Jan-2015 05:53:10 America/Denver] PHP Warning:  Division by zero in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 2050
+[12-Jan-2015 07:09:52 America/Denver] PHP Warning:  Division by zero in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 2050
+[12-Jan-2015 07:15:36 America/Denver] PHP Warning:  Division by zero in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 2050
+[17-Feb-2015 23:55:47 America/Denver] PHP Notice:  Undefined index: database in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/includes/loginInfo.php on line 13
+[03-Mar-2015 01:04:51 America/Denver] PHP Notice:  Undefined index: database in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/includes/loginInfo.php on line 13
+[03-Mar-2015 01:04:51 America/Denver] PHP Notice:  Undefined index: staff_name in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/includes/loginInfo.php on line 22
+[03-Mar-2015 01:04:51 America/Denver] PHP Notice:  Undefined index: staff_role in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/includes/loginInfo.php on line 23
+[13-Mar-2015 02:38:38 America/Denver] PHP Warning:  date_diff() expects parameter 2 to be DateTime, boolean given in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 2165
+[13-Mar-2015 02:38:38 America/Denver] PHP Fatal error:  Call to a member function format() on a non-object in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 2171
+[13-Mar-2015 02:39:03 America/Denver] PHP Warning:  date_diff() expects parameter 2 to be DateTime, boolean given in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 2165
+[13-Mar-2015 02:39:03 America/Denver] PHP Fatal error:  Call to a member function format() on a non-object in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 2171
+[13-Mar-2015 02:39:34 America/Denver] PHP Warning:  date_diff() expects parameter 2 to be DateTime, boolean given in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 2165
+[13-Mar-2015 02:39:34 America/Denver] PHP Fatal error:  Call to a member function format() on a non-object in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/queryFunctions.php on line 2171
+[13-Mar-2015 06:05:05 America/Denver] PHP Notice:  Undefined index: staff_email in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 21
+[13-Mar-2015 06:05:05 America/Denver] PHP Notice:  Undefined variable: priv_ciff_kpi in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[13-Mar-2015 06:05:05 America/Denver] PHP Notice:  Undefined variable: priv_ciff_report in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[13-Mar-2015 06:05:05 America/Denver] PHP Notice:  Undefined variable: priv_end_fund in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[13-Mar-2015 06:05:05 America/Denver] PHP Notice:  Undefined variable: priv_ntd in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[13-Mar-2015 06:05:05 America/Denver] PHP Notice:  Undefined variable: priv_usaid in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32
+[13-Mar-2015 06:05:05 America/Denver] PHP Notice:  Undefined variable: priv_who in /home3/xemplar1/public_html/evidence-action/dtw/performanceData/dashboards/comprehensiveAll.php on line 32

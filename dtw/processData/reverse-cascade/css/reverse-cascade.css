@@ -1,0 +1,220 @@
+
+/*module-reverse-cascade*/
+table {
+	background-color: #fff!important;
+}
+
+form {
+	/*background-color: #fff!important;*/
+}
+
+.back-white{
+
+	background-color: #fff;
+}
+
+#hor-form{
+		padding: 5px;
+		background: #f9f9f9;
+		border-radius: 4px 4px 0 0;
+		border-color: #ddd;
+		border-width: 1px;
+		bottom-border: 1px;
+		box-shadow: none;
+		display: none;
+
+
+	/*margin-left: 0;
+	margin-right: 0;
+	background-color: #fff;
+	border-width: 1px;
+	border-color: #ddd;
+	border-radius: 4px 4px 0 0;
+	box-shadow: none;*/
+}
+
+/*.backw{*/
+#data-table-container{
+	background-color: #F5F6FD;
+	padding: 10px;
+}
+
+.hor-sm{
+	height: 20px !important;
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 3px;
+}
+
+.select-width{
+	width: 127% !important;
+}
+
+.no-background{
+	background-color: transparent !important; 3
+}
+
+.panel-body{
+	padding: 0px 0px 0px 10px !important;
+}
+.no-text-decor li:hover{
+	text-decoration: none !important;
+}
+.no-text-decor{
+	text-decoration: none !important;
+}
+
+.create-log-submit{
+	/*display: none !important;*/
+}
+
+.align-center{
+	text-align: center !important;
+}
+
+.align-td{
+	padding-left: 4% !important;
+}
+
+.yourClass{
+	/*background-image: url('http://www.bba-reman.com/images/fbloader.gif');
+	background-repeat:no-repeat;*/
+	/*background-color: red !important;*/
+	color: red !important;
+	/*opacity: 0.3;*/
+}
+
+.float_left{
+	float: left;
+}
+.float_right{
+	float: right;
+}
+
+.small-heading{
+	font-size: 17px;
+	font-weight: bold ;
+}
+
+.glyphicon-trash:hover{
+	cursor: pointer;
+}
+
+table.dataTable {
+	font-size: 14px;
+
+}
+
+.hand:hover{
+	cursor: pointer;
+}
+
+
+/*Overighting data tables*/
+.dataTables_wrapper .dataTables_filter {
+  float: left !important;
+  text-align: right;
+}
+
+.dataTables_wrapper .dataTables_length {
+  float: right !important;
+}
+
+.pencil{
+	cursor: pointer;
+	background: url(../../../images/icons/edit2.png);
+	background-position: center center; 
+	border: none; 
+	background-repeat: no-repeat; 
+	width: 30px;
+}
+
+.pink-button{
+	background-color: #F14E6C;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 3px;
+	border: 1px solid #b36877;
+	text-decoration: none;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 15px 41px;
+	padding: 5px 6px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #2f6627;
+}
+.pink-button:hover{
+	text-decoration: none;
+	color: #fff;
+}
+
+.glyphicon-exclamation-sign{
+	color: #ed9c28;
+	cursor: pointer;
+}
+
+.glyphicon-minus-sign{
+	color: red;
+	cursor: pointer;
+}
+.glyphicon-ok-sign{
+	color: #47a447;
+	cursor: pointer;
+}
+
+.glyphicon-ok-sign-blue{
+	color: #3B77DE !important;
+	cursor: pointer;
+}
+
+.panel-body a{
+	list-style: none;
+}
+
+.no-decoration li{
+	list-style: none;
+}
+
+.vclear{
+	clear: both;
+}
+
+.year-select{
+	 border: 0;
+	 cursor: pointer;
+	 padding: 0px;
+	 padding-left: 0px;
+	 margin-left: 0px;
+	 
+}
+
+.year-select-option{
+	 padding: 0px;
+	 padding-left: 0px;
+	 margin-left: 0px;
+	 overflow: hidden;
+}
+
+.select-years-form{
+	margin-bottom: 0px;
+	float: left;
+	cursor: pointer;
+	overflow: hidden
+
+}
+
+
+table.dataTable thead th, table.dataTable thead td {
+	/*padding: 10px 18px;*/
+	border-bottom: 1px solid #DDDDDD !important;
+	border-left: solid 1px #dddddd !important;
+}
+
+
+
+
+
+

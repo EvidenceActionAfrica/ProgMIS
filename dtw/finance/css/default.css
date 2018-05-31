@@ -1,0 +1,356 @@
+.text-vertical {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  /* Should be unset in IE9+ I think. */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.nav-tabs.commpressed li a {
+	font-size: 9px;
+	line-height: 15px;
+	padding-left: 6px;
+	padding-right: 6px
+}
+
+.error-message {
+	display: block;
+	background-color: #F2DEDE;
+	margin-bottom: 5px;
+	padding: 8px 15px;
+	border: 1px solid #e0b1b1;
+	text-align: center;
+}
+
+.alert.alert-block button.close {
+	background: transparent;
+	border: none;
+	font-size: 20px;
+	color: #929292;
+}
+
+input[type="checkbox"] {
+margin: 0 0 0;
+}
+
+table {
+	background-color: #fff;
+}
+
+ul {
+	list-style: none;
+}
+
+p.big-info {
+	padding: 20px;
+}
+
+a.btn {
+	text-decoration: none;
+}
+
+ul.body-list {
+	list-style: none;
+	padding-left: 20px;
+}
+
+ul.body-list li a{
+	color:#333;
+	text-decoration: none;
+	padding-left: 5px 10px
+}
+
+ul.body-list li a:hover {
+	background-color:#E7E3E0 ;
+}
+
+th a,
+td a {
+	height: 100%;
+	color: #333;
+	text-decoration: none;
+}
+
+td.hidden,
+th.hidden {
+	display: none;
+}
+
+td.helper {
+	color: gray;
+}
+
+.tab-content {
+	padding: 20px;
+	background-color: #fff;
+}
+
+#budget-form-container .table-responsive{
+	width: 100%;
+	overflow: auto;
+}
+
+#budget-form-container table {
+	background-color: #fff;
+	border:1px solid #333;
+	border-radius: 0px;
+}
+
+#budget-form-container .table-responsive table tr#submit-row td{
+	padding: 5px 0;
+	text-align: center;
+}
+
+#budget-form-container table th,
+#budget-form-container table td {
+	padding: 0;
+	border-color: #333;
+}
+
+#budget-form-container table tr td.disabled {
+	background-color: #EEEEEE;
+}
+
+#budget-form-container table tr td.disabled:hover {
+	cursor: not-allowed;
+}
+
+#budget-form-container table {
+	border-left:0;
+}
+
+#budget-form-container table thead th {
+	text-align: center;
+}
+
+#budget-form-container table select,
+#budget-form-container table input,
+#budget-form-container table textarea {
+	margin:0;
+	border:0;
+}
+
+#budget-form-container table select,
+#budget-form-container table input {
+	width: 65%;
+	height: 99%;
+}
+
+#budget-form-container.cheque-request table select {
+	width: 60%;
+	height: 20px;
+	font-size: 12px;
+}
+#budget-form-container.cheque-request table p {
+	margin:0;
+}
+
+#budget-form-recon table tr td input {
+	width:97%;
+	padding-left: 3px;
+}
+
+#budget-form-container table textarea {
+	width: inherit;
+	min-width: 99%;
+	height: 100%;
+	font-size: 10px;
+	resize: vertical;
+}
+
+#budget-form-container.form-budget {
+	/*margin:auto;*/
+	width: 800px;
+	padding: 30px 20px 20px;
+	border: 1px solid #000;
+	background-color: #fff;
+}
+
+#budget-form-header {
+	text-align: center;
+}
+
+#budget-form-header-meta {
+	text-align: left;
+}
+
+#budget-form-header-meta h5 {
+	margin-bottom: 0px;
+}
+
+#budget-form-header-meta p {
+	margin-top: 0;
+}
+
+#budget-form-header-meta p.meta {
+	border-bottom: 2px solid #000; 
+	margin-bottom: 10px
+}
+
+#budget-form-header-meta .meta .meta-label {
+	font-weight: bold;
+	min-width: 200px;
+}
+
+#budget-form-header-meta p.notes {
+	font-size: 11px;
+	font-weight: bold;
+	text-align: justify;
+}
+
+#budget-form-body table tr.compress th {
+	font-size: 10px;
+	line-height: 12px;
+}
+
+#budget-form-body table tr td {
+	font-size: 11px;
+}
+
+#budget-form-body table tr td input:focus,
+#budget-form-body table tr td textarea:focus {
+	box-shadow: none;
+}
+
+#budget-form-body table tr td#remarks textarea {
+	min-width: 0;
+	width: 98.7%;
+	padding: 5px;
+	min-height: 70px;
+	resize: vertical;
+}
+
+#budget-form-body table#imprest tr td:first-child,
+#budget-form-body table#recon-table tr td:first-child, 
+#budget-form-body table#imprest tr th:first-child,
+#budget-form-body table#recon-table tr th:first-child {
+	width: 280px;
+}
+
+#budget-form-body table#imprest tr td:nth-child(n+2),
+#budget-form-body table#recon-table tr td:nth-child(n+2),
+#budget-form-body table#imprest tr th:nth-child(n+2),
+#budget-form-body table#recon-table tr th:nth-child(n+2) {
+	width: 100px;
+}
+
+#budget-table {
+	border-color: #333;
+}
+
+#budget-table tr {
+	min-height: 100px;
+}
+
+#budget-table tr th {
+	font-size: 11px;
+	line-height: 12px;
+	padding: 8px 0 10px;
+}
+
+#budget-table tr td,
+#budget-table tr th {
+	padding: 3px;
+	color: #333;
+}
+
+#budget-table tr td {
+	font-size: 9px;
+	line-height: 11px;
+	vertical-align: middle;
+}
+
+#budget-table tr .units,
+#budget-table tr .days,
+#budget-table tr .unit_cost,
+#budget-table tr .ttsessions,
+#budget-table tr .distance,
+#budget-table tr .total 
+{
+	width: 50px;
+}
+
+#budget-table tr td.units,
+#budget-table tr td.days,
+#budget-table tr td.unit_cost,
+#budget-table tr td.ttsessions,
+#budget-table tr td.distance,
+#budget-table tr td.total {
+	font-size: 10px;
+}
+
+#budget-table tr .units input,
+#budget-table tr .days input,
+#budget-table tr .unit_cost input,
+#budget-table tr .ttsessions input,
+#budget-table tr .distance input,
+#budget-table tr .total input {
+	padding: 0 5px;
+}
+
+#budget-table tr td input {
+	width: 82%;
+}
+
+#budget-table tr .total {
+	font-weight: bold;
+}
+
+#budget-table .budget-total,
+#budget-table tr .total input {
+	text-align: right;
+}
+
+div#data-table_length {
+    float: right;
+}
+
+div#data-table_filter {
+    /* float: right; */
+}
+
+.form-list-table tfoot tr th:last-child select {
+    display: none;
+}
+
+.ret-report-container {
+	overflow-y: auto; 
+}
+
+.ret-report-container table thead tr th {
+	font-size: 12px;
+	text-align: center;
+	line-height: 12px;
+}
+
+.ret-report-container table thead tr:nth-child(2) th {
+	font-size: 10px;
+}
+
+.ret-report-container table tbody tr td {
+	line-height: 13px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.ret-report-container table tbody tr td:nth-child(-n+3) {
+	text-align: left;
+}
+
+.ref-table-container table tbody tr td small, 
+.ret-report-container table tbody tr td small {
+	font-size: 10px;
+	line-height: 11px;
+	color: #868686;
+}
+

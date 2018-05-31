@@ -1,0 +1,1 @@
+<?php include "../../includes/db_conf.php"; include "../../includes/db_class.php"; ?>

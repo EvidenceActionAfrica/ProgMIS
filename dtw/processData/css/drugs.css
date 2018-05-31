@@ -1,0 +1,158 @@
+#loading-image{
+	width: 25px;
+	margin-top: 12.5%;
+	margin-left: -10%;
+}
+
+
+
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  display: block;
+  opacity: 0.4;
+  background-color: #fff;
+  z-index:	 99;
+  text-align: center;
+}
+
+#loading-image {
+}
+
+.drugs-table tr{
+	border-bottom: solid;
+}
+
+#current_assumption{
+  background-color: #E0677F !important;
+}
+
+.county-total{
+  background-color: #FFDBE2 !important;
+}
+
+.county-total td{
+  border-bottom: none;
+}
+
+/*table styles*/
+
+#drugs-hor-minimalist-b
+
+{
+
+  font-family: "Verdana", "Arial", Helvetica, sans-serif
+  font-size: 12px;
+  background: #fff;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin: 0px auto;
+
+}
+
+#drugs-hor-minimalist-b th
+
+{
+
+  font-size: 13px;
+  background-color: #F7F7F7;
+
+  font-weight: bold;
+
+  /*color: #039;*/
+
+  padding: 10px 8px;
+
+  border-bottom: 2px solid #ccc;
+
+  /*border: 1px solid #6678b1;*/
+  border: 1px #ccc;
+
+}
+
+#drugs-hor-minimalist-b td
+
+{
+
+  border-bottom: 1px solid #ccc;
+
+  border: 1px solid #ccc;
+
+  /*color: #669;*/
+
+  padding: 1px;
+
+  padding: 6px 8px;
+
+}
+
+#drugs-hor-minimalist-b tbody tr:hover td
+
+{
+
+  /*color: #009;*/
+  background-color: #f2ebe6;
+  cursor: pointer;
+
+}
+
+.drugs-mini-table-width{
+/*  height: 400px;
+  overflow: scroll;*/
+ /* width: 1200px; */
+  /*overflow-x: scroll;*/
+}
+
+.drugs-data-table{
+  width: 100% !important;
+}
+
+.small-heading{
+  font-size: 17px;
+  font-weight: bold ;
+}
+
+.add-treatment-form{
+  display: none;
+}
+
+.hor-sm{
+  height: 20px !important;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+.grey-out{
+  background-color: #fff;
+  opacity: 0.3;
+}
+
+
+#data-table-container {
+  margin-left: 0;
+margin-right: 0;
+background-color: #fff;
+border-width: 1px;
+border-color: #ddd;
+border-radius: 4px 4px 0 0;
+box-shadow: none;
+}
+
+.white-back{
+  background-color: #fff;
+  padding: 10px;
+}
+
+.text-left{
+  text-align: left !important;
+}
+
+.save-info-dec:hover, .save_info:hover{
+  cursor: pointer;
+}

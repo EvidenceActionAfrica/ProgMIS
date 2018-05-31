@@ -1,0 +1,25 @@
+.table.table-bordered.table-condensed.table-striped.table-hover td {
+    padding: 0;
+}
+
+.table.table-bordered.table-condensed.table-striped.table-hover input[type="text"] {
+    background: none repeat scroll 0 center transparent;
+    height: 100%;
+    width: 100%;
+    border:0;
+}
+.txtCenter, table input[type="text"]{
+    width: 100%;
+    text-align: center;
+    border: 0px solid black;
+    background-color:rgb(255,255,255);
+}
+.txtBx{
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+body{
+    font-family:helvetica,Arial,courier;
+}

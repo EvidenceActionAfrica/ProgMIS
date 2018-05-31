@@ -1,0 +1,713 @@
+<?php
+date_default_timezone_set("Africa/Nairobi");
+require_once ('includes/auth.php');
+require_once ('../includes/config.php');
+require_once ("../includes/functions.php");
+require_once ("../includes/form_functions.php");
+$tabActive="tab1";
+$level = $_SESSION['level'];
+//$no_of_records = $_POST['no_of_records'];
+$updateResult="";
+if(isset($no_of_records)){
+   $tabActive="tab2"; 
+}
+if(isset($_GET["UndoBoxIdDT"])){
+    $tabActive="tab3";
+    $sql="UPDATE materials_packaging_history_data set collected=0 WHERE box_id=".$_GET["UndoBoxIdDT"];
+    mysql_query($sql);
+}
+if(isset($_GET["UndoBoxIdTT"])){
+    $tabActive="tab3";
+    $sql="UPDATE materials_packaging_history_ttb set collected=0 WHERE box_id=".$_GET["UndoBoxIdTT"];
+    mysql_query($sql);
+}
+if(isset($_POST["Get_Records"])){
+    
+    //We Need to know the no.of record to loop through.
+    
+                    $sql="SELECT * from materials_packaging_history_data where printlist_id='$printlistId' and collected=0";
+                    $resultB=mysql_query($sql);
+                    $count=0;
+                    $numRowsDT=  mysql_num_rows($resultB);
+                    echo "Number of Rows in DT are ".$numRowsDT."<br/>";
+//NumRowsDT Contains the number of rows to loop through during the array_push for materials_packaging_history_data
+    
+                     $sql="SELECT * from materials_packaging_history_ttb where printlist_id='$printlistId' and collected=0";
+                    $resultB=mysql_query($sql)or die(mysql_error());
+                    $count=0;
+                    $numRowsTT=mysql_num_rows($resultB);
+                    echo "Number of Rows in TT are ".$numRowsTT."<br/>";
+//NumRowsTT Contains the number of rows to loop through during the array_push for materials_packaging_history_data
+       
+    
+    
+  $no_of_records =1;
+   $tabActive="tab2";
+ $count=0;
+$boxDT=array();
+ while($count<=$numRowsDT){
+       if(isset($_POST["boxDT".$count])>=0 ){
+       //  $boxDT[$count]=$_POST["boxDT".$count];
+         array_push($boxDT, $_POST["boxDT".$count]);
+         echo $_POST["boxDT".$count]."<br/>";
+     }
+     ++$count;
+ }
+  $count=0;
+$boxTT=array();
+ while($count<=$numRowsTT){
+       if(isset($_POST["boxTT".$count])>=0 ){
+       //  $boxDT[$count]=$_POST["boxDT".$count];
+         array_push($boxTT, $_POST["boxTT".$count]);
+         echo $_POST["boxTT".$count]."<br/>";
+         
+       }
+     ++$count;
+ }
+   $_SESSION["boxDT"]=$boxDT;
+ $_SESSION["boxTT"]=$boxTT;
+ 
+if(sizeof($boxDT)<=0 && sizeof($boxTT)<=0){
+    $no_of_records=0;
+}else{
+$no_of_records=1;
+    
+}
+//echo $no_of_records;
+
+
+}
+if(isset($_GET["DeleteId"])){
+    $id = $_GET["DeleteId"];
+// sending query
+mysql_query("DELETE FROM collect_training_materials WHERE id = '$id'")or die(mysql_error());  
+$tabActive="tab2";
+$updateResult="Record Deleted.";
+}
+//Submit Collect Training Materials Form
+if(isset($_POST['Submit']))
+{
+    $tabActive="tab2";
+//Sel All Fields Populated
+$size = $no_of_records;
+$size = 1;
+//echo "Total is".$no_of_records;
+$records = 0;
+while ($records < $size) {	
+	$date = $_POST['date'];
+	$ministry= $_POST['ministry'];
+	$purpose= $_POST['purpose'];
+	$name = $_POST['name'][$records];
+	$personal_no= $_POST['personal_no'][$records];
+	$title= $_POST['title'][$records];
+	$phone_no= $_POST['phone_no'][$records];
+	$no_of_boxes= $_POST['no_of_boxes'][$records];
+	$no_of_poles= $_POST['no_of_poles'][$records];
+	$pby_name= $_POST['pby_name'];
+	$pby_position= $_POST['pby_position'];
+	$pby_contact= $_POST['pby_contact'];
+	$pby_date= $_POST['pby_date'];
+ 
+	$query = "INSERT INTO collect_training_materials (date,ministry,purpose,name,personal_no,title,phone_no,no_of_boxes,no_of_poles,pby_name,pby_position,pby_contact,pby_date) 
+	VALUES('{$date}','{$ministry}','{$purpose}','{$name}','{$personal_no}','{$title}','{$phone_no}','{$no_of_boxes}','{$no_of_poles}','{$pby_name}','{$pby_position}','{$pby_contact}','{$pby_date}')";
+	echo $sql;
+        mysql_query($query) or die ("Error in query: $query");
+	++$records;
+	$updateResult="Record Saved.";
+}
+        $boxDTCount=sizeof($_SESSION["boxDT"]);
+       $boxTTCount=sizeof($_SESSION["boxTT"]);
+        $numberM=$boxDTCount+$boxTTCount;
+       $boxDT= $_SESSION["boxDT"];
+        $boxTT=$_SESSION["boxTT"];
+        $count=0;
+     
+       while($count<=$boxDTCount){
+           //Extract District & County
+          
+           if($boxDT[$count]!=NULL ||$boxDT[$count]!="" ){
+           $sql="UPDATE materials_packaging_history_data set collected=1,name='$name',phone='$phone_no',date='$date' WHERE package_id=".$boxDT[$count];
+           // echo $sql;
+           mysql_query($sql);
+           }
+           ++$count;
+       }
+    $count=0;
+     
+       while($count<=$boxTTCount){
+           //Extract District & County
+        //   echo $boxDT[$count];
+           if($boxTT[$count]!=NULL ||$boxTT[$count]!="" ){
+           $sql="UPDATE materials_packaging_history_ttb set collected=1,name='$name',phone='$phone_no',date='$date' WHERE package_id=".$boxTT[$count];
+          echo $sql;
+           mysql_query($sql);
+           }
+           ++$count;
+       }
+
+}
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+  <head>
+    <title>Evidence Action</title>
+    <link href="../css/tabs_css.css" rel="stylesheet" type="text/css"/>
+    <?php require_once ("includes/meta-link-script.php"); ?>
+    <script src="../js/tabs.js"></script>
+  </head>
+
+
+  <body>
+    <!---------------- header start ------------------------>
+    <div class="header">
+      <div style="float: left">  <img src="../images/logo.png" />  </div>
+      <div class="menuLinks">
+        <?php   require_once ("includes/menuNav.php");  ?>
+      </div>
+    </div>
+ <div class="clearFix"></div>
+    <!---------------- content body ------------------------>
+    <div class="contentMain">
+      <div class="contentLeft">
+        <?php
+        require_once ("includes/menuLeftBar-Materials.php");
+        ?>
+      </div>
+        
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <div class="contentBody" >
+          <h2 style="margin-left:20%;">Training Materials Collection</h2>
+           <div style="margin-left:0%;margin-top:0%;" class="alert alert-block">
+
+				Warning! &nbsp; This Form will only display data from the active Print Order And Packing Information.
+   		   </div>
+      
+        <div class="tabbable" >
+          <ul class="nav nav-tabs">
+
+            <li <?php if ($tabActive == 'tab1') echo "class='active'" ?>><a href="#tab1" data-toggle="tab">Inventory</a></li>
+            <li <?php if ($tabActive == 'tab2') echo "class='active'" ?>><a href="#tab2" data-toggle="tab">Materials Collection</a></li>
+            <li <?php if ($tabActive == 'tab3') echo "class='active'" ?>><a href="#tab3" data-toggle="tab">Materials Collected</a></li>
+           
+         
+          </ul>
+          <div class="tab-content" style="max-height:650px; overflow:scroll;">
+            
+            <div class="tab-pane <?php if ($tabActive == 'tab1') echo 'active'; ?>" id="tab1">
+                 <form action="materials_collecting.php" method="POST">
+                <?php
+                
+                   $sql="select id from materials_printlist_history where status=1";
+                    $resultQ=mysql_query($sql); 
+                    while($row=mysql_fetch_array($resultQ)){
+                      $printlistId=$row["id"];
+                    }
+                    
+                    
+                    $sql="SELECT * from materials_packaging_history_data where printlist_id='$printlistId' and collected=0";
+                    $resultB=mysql_query($sql);
+                    $count=0;
+                    $numRows=  mysql_affected_rows();
+                    if($numRows>=1){
+                    ?>
+                <table  class="table table-bordered table-condensed table-striped table-hover" >
+                    <caption><h2>District Training Boxes</h2></caption>
+                    <tr>
+                        
+                        <th>Collect</th>
+                        <th>Box Id</th>
+                        <th>County</th>
+                        <th>District</th>
+                        
+                    </tr>
+                    <?php
+                    while($row=mysql_fetch_array($resultB)){
+                        ?>
+
+                    <tr>
+                   <td><input type="checkbox"  name=<?php echo "boxDT".$count." value='".$row["package_id"]."'/></td><td>".$row["box_id"] ?></td> <td><?php echo $row["county_name"] ?></td> <td><?php echo $row["district_name"] ?></td>
+                          </tr>
+                       
+
+
+                    <?php
+                    ++$count;
+                    }
+
+                    ?>
+                </table>
+                <?php
+                    }else{
+                        echo"<h2>No District Training Box Has Been Packaged By the Active Vendor/Print Order</h2><br/>";
+                    }
+                
+                   $sql="select id from materials_printlist_history where status=1";
+                    $resultQ=mysql_query($sql); 
+                    while($row=mysql_fetch_array($resultQ)){
+                      $printlistId=$row["id"];
+                    }
+                    
+                    
+                    $sql="SELECT * from materials_packaging_history_ttb where printlist_id='$printlistId' and collected=0";
+                    $resultB=mysql_query($sql);
+                    $count=0;
+                    $numRows=  mysql_affected_rows();
+                    if($numRows>=1){
+                    ?>
+                
+                <table  class="table table-bordered table-condensed table-striped table-hover" >
+                    <caption><h2>Teacher Training Boxes</h2></caption>
+                    <tr>
+                        
+                        <th>Collect</th>
+                        <th>Box Id</th>
+                        <th>County</th>
+                        <th>District</th>
+                        
+                    </tr>
+                    <?php
+                   
+                    while($row=mysql_fetch_array($resultB)){
+                        ?>
+
+                    <tr>
+          <td><input type="checkbox"  name=<?php echo "boxTT".$count." value='".$row["package_id"]."' /></td><td>".$row["box_id"] ?></td> <td><?php echo $row["county_name"] ?></td> <td><?php echo $row["district_name"] ?></td>
+                              </tr>
+                       
+
+
+                    <?php
+                    ++$count;
+                    }
+
+                    ?>
+                </table>
+               
+    
+	<input type="submit" name="Get_Records" style="margin-left:30%;" class="btn-custom" value="Collect These Materials" />
+	
+	</form>
+                <?php
+                    }else{
+                        echo"<h2>No Teacher Training Box Has Been Packaged By the Active Vendor/Print Order</h2><br/>";
+                    }
+                ?>
+			 </div>
+
+		    <div class="tab-pane <?php if ($tabActive == 'tab2') echo 'active'; ?>" id="tab2">
+	<h2 id="h2info"style="background:#bada66;" align="center"><?php echo $updateResult; ?></h2>		  
+<table align="center">
+  <tr>
+    <th colspan="7">Collecting Training Material Form</th>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+	
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+<form action="" method="POST">
+    <?php
+    if($no_of_records>0){
+        $boxDTCount=sizeof($_SESSION["boxDT"]);
+       $boxTTCount=sizeof($_SESSION["boxTT"]);
+        $numberM=$boxDTCount+$boxTTCount;
+       $boxDT= $_SESSION["boxDT"];
+        $boxTT=$_SESSION["boxTT"];
+        $count=0;
+        $noPoles=0;
+       while($count<=$boxDTCount){
+           //Extract District & County
+         //  echo $boxDT[$count];
+           if($boxDT[$count]!=NULL ||$boxDT[$count]!="" ){
+           $sql="SELECT * from materials_packaging_history_data where package_id=".$boxDT[$count];
+           
+          echo $sql."<br/>";
+            $resultS=mysql_query($sql);
+            while($key=mysql_fetch_array($resultS)){
+                $county=$key["county_name"];
+                $district=$key["district_name"];
+            }
+
+            //Check the no.of schools with schisto or schisto/sth
+           
+           $sql="Select COUNT(school_name) AS Number from schools as s,districts as d where s.county='$county' AND s.district_name='$district' AND s.district_name=d.district_name AND( d.treatment_type='STH/Schisto' OR d.treatment_type='Schisto')";
+           echo $sql;
+           $results=mysql_query($sql);
+           while($row= mysql_fetch_array($results)){
+               $noSchisto=$row["Number"];
+           }
+           $noPoles=$noPoles+$noSchisto;
+           
+       }
+           ++$count;
+       }
+       $count=0;
+              while($count<=$boxTTCount){
+           //Extract District & County
+              if($boxTT[$count]!=NULL ||$boxTT[$count]!="" ){
+           $sql="SELECT * from materials_packaging_history_ttb where package_id=".$boxTT[$count];
+          
+            $resultS=mysql_query($sql);
+         while($key=mysql_fetch_array($resultS)){
+                $county=$key["county_name"];
+                $district=$key["district_name"];
+            }
+
+            //Check the no.of schools with schisto or schisto/sth
+           
+           $sql="Select COUNT(school_name) AS Number from schools where county='$county' AND district_name='$district'";
+         //  echo $sql."<br/>";
+           $results=  mysql_query($sql);
+           while($row=  mysql_fetch_array($results)){
+               $noSchisto=$row["Number"];
+           }
+           $noPoles=$noPoles+$noSchisto;
+              }
+             // echo "Poles Are".$noPoles;
+           ++$count;
+       }
+       $noPoles=$noPoles*3;
+        
+    ?>
+  <tr>
+    <td><b><input name="no_of_records" type="hidden" value="<?php echo $no_of_records; ?>">Date:</b></td>
+    <td colspan="2"><input name="date" type="date" class="datepicker" required></td>
+	<td>&nbsp;</td>
+    <td colspan="3"><b>Tick One: </b><input type="radio" name="ministry" value="MoE" required>MoE <input type="radio" name="ministry" value="MoPHS" required>MoPHS</td>
+  </tr>
+  <tr>
+    <td colspan="7" align="center"><b>Purpose (tick one): </b>
+	<input type="radio" name="purpose" value="Collecting Training Materials" required>
+        Collecting Training Materials
+    <input type="radio" name="purpose" value="Picking Master trainers">
+        Picking Master trainers
+	<input type="radio" name="purpose" value="Other">
+        Other
+	</td>
+  </tr>
+  <tr>
+    <th>No.</th>
+    <th>Name</th>
+    <th>Personal Number (P/No)</th>
+    <th>Position/Title</th>
+    <th>Mobile Phone Number</th>
+    <th>Number of Boxes</th>
+    <th>Number of Poles</th>
+  </tr>
+  <?php
+	for ($i=1; $i<=$no_of_records; $i++){
+  ?>
+  <tr>
+    <td><?php echo $i ?></td>
+    <td><input name="name[]" type="text" id="name"></td>
+    <td><input name="personal_no[]" type="text" id="personal_no"></td>
+    <td><select name="title[]" id="title">
+      <option value="">Position/Title</option>
+      <option value="DEO">DEO</option>
+      <option value="AEO">AEO</option>
+      <option value="DMOH">DMOH</option>
+      <option value="DPHO">DPHO</option>
+    </select>    </td>
+    <td><input name="phone_no[]" type="text" id="phone_no"></td>
+    <td>   &nbsp;   &nbsp;    <input name="no_of_boxes[]" class="input-mini" type="text" id="no_of_boxes" style="text-align:center;" value="<?php echo $numberM; ?>" readonly/></td>
+    <td>  &nbsp;   &nbsp;    <input name="no_of_poles[]" class="input-mini" type="text" id="no_of_poles"value="<?php echo $noPoles; ?>"/></td>
+  <?php
+
+	}
+  ?>
+  </tr> 
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><b>Prepared By:</b></td>
+    <td>  <select name="pby_name"  id="pby_name">
+        
+        
+        <?php
+        echo "<option selected='selected' value=".$_SESSION["staff_name"].">".$_SESSION["staff_name"]."</option>";
+       
+       $sql="SELECT * from staff";
+       $result=mysql_query($sql);
+       while($row=mysql_fetch_array($result)){
+        
+       
+        echo "<option value=".$row["staff_name"].">".$row["staff_name"]."</option>";
+       
+      
+       }
+       ?>
+  
+            </select>
+    </td>
+    <td>
+	<select name="pby_position" id="pby_position" required>
+      <option value="">Position/Title</option>
+      <option value="DEO">DEO</option>
+      <option value="AEO">AEO</option>
+      <option value="DMOH">DMOH</option>
+      <option value="DPHO">DPHO</option>
+    </select>
+	</td>
+    <td><input name="pby_contact" type="text" id="pby_contact" placeholder="Contact" required/></td>
+    
+    <td><input name="pby_date" type="date" id="pby_date" class="datepicker" placeholder="Date" required/></td>
+  </tr><tr><td>&nbsp;</td></tr>
+  <tr><td colspan="4" align="center"><input class="btn-custom-small" type="submit" name="Submit" value="Submit Details" /></td></tr>
+<?php
+    }
+    ?>
+</form>
+</table>
+	<p>
+	<div >
+            
+                      <?php
+                      $count = 0;
+                      $sql = "SELECT * FROM collect_training_materials ORDER BY date DESC";
+                      $result = mysql_query($sql);
+                      $numRow=  mysql_affected_rows();
+                      if($numRow>=1){
+                          ?>
+                      
+                  <table class="table table-bordered table-condensed table-striped table-hover"  border="0" frame="box" align="center" cellspacing="1" class="table-hover">
+                    <thead>
+                      <tr style="border: 1px solid #B4B5B0;">
+
+                        <th align="Left" width="10%">Date</th>
+                        <th align="Left" width="10%">Ministry</th>
+                        <th align="Left" width="10%">Purpose</th>
+                        <th align="Left" width="20%">Name</th>
+                        <th align="Left" width="15%">Personal No</th>
+                        <th align="Left" width="10%">Title</th>
+			<th align="Left" width="10%">Phone No</th>
+                        <th align="Left" width="10%">No of Boxes</th>
+                        <th align="Left" width="10%">No of Poles</th>
+                        <th align="center" width="4%">Edit</th>
+                        <th align="center" width="4%">Del</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+
+                      <?php
+                      
+                      while ($row = mysql_fetch_array($result)) {
+
+                        $id = $row['id'];
+                        $date = $row['date'];
+                        $ministry = $row['ministry'];
+                        $purpose = $row['purpose'];
+                        $name = $row['name'];
+                        $personal_no = $row['personal_no'];
+                        $title = $row['title'];
+						$phone_no = $row['phone_no'];
+                        $no_of_boxes = $row['no_of_boxes'];
+                        $no_of_poles = $row['no_of_poles'];
+                        ?>
+                        <tr style="border-bottom: 1px solid #B4B5B0;">
+
+                          <td align="left" width="10%"> <?php echo $date; ?>  </td>
+                          <td align="left" width="10%"> <?php echo $ministry; ?> </td>
+                          <td align="left" width="10%"> <?php echo $purpose; ?> </td>
+                          <td align="left" width="20%"> <?php echo $name; ?> </td>
+                          <td align="left" width="15%"> <?php echo $personal_no; ?> </td>
+                          <td align="left" width="10%"> <?php echo $title; ?>  </td>
+						  <td align="left" width="10%"> <?php echo $phone_no; ?>  </td>
+                          <td align="left" width="10%"> <?php echo $no_of_boxes; ?> </td>
+                          <td align="left" width="10%"> <?php echo $no_of_poles; ?> </td>
+                          <td align="center" width="4%"><a href="edit_collect_training_materials.php?id=<?php echo $id; ?>" onclick="javascript:void window.open('edit_collect_training_materials.php?id=<?php echo $id; ?>', '1397210634467', 'width=1050,height=500,status=1,scrollbars=1,resizable=1,left=150,top=0'); 
+						  return false;"><img src="../images/icons/edit2.png" height="20px"></a></td>
+                          <td align="center" width="4%"><a href="materials_collecting.php?DeleteId=<?php echo $id; ?>" onclick="show_confirm()"><img src="../images/icons/delete.png" height="20px"></a></td>
+                        </tr>
+                      </tbody>
+                    <?php } ?>
+                  </table>
+                 <?php }else{
+                     echo "<h2 id=\"h2info\"style=\"background:#bada66;\">No Materials Have Ever Been Collected</h2>";
+                 } ?>
+                </div>
+				</p>
+			</div>
+          
+		    <div class="tab-pane <?php if ($tabActive == 'tab3') echo 'active'; ?>" id="tab3">
+                       <?php
+                       if(isset($_GET["UndoBoxIdDT"])){
+                        $updateResult="The Box Has Been Returned";
+                           
+                       }
+                        ?>
+                        
+  <h2 id="h2info"style="background:#bada66;"><?php echo $updateResult; $updateResult="";  ?></h2>
+     <form action="materials_collecting.php" method="POST">
+                <?php
+                
+                   $sql="select id from materials_printlist_history where status=1";
+                    $resultQ=mysql_query($sql); 
+                    while($row=mysql_fetch_array($resultQ)){
+                      $printlistId=$row["id"];
+                    }
+                    
+                    
+                    $sql="SELECT * from materials_packaging_history_data where printlist_id='$printlistId' AND collected=1";
+                    $resultB=mysql_query($sql);
+                    $count=0;
+                    $numRows=  mysql_affected_rows();
+                    if($numRows>=1){
+                    ?>
+                <table  class="table table-bordered table-condensed table-striped table-hover" >
+                    <caption><h2>District Training Boxes</h2></caption>
+                    <tr>
+                        
+                        <th>Box Id</th>
+                        <th>County</th>
+                        <th>District</th>
+                        
+                        <th>Edit</th>
+                    </tr>
+                    <?php
+                    while($row=mysql_fetch_array($resultB)){
+                        ?>
+
+                    <tr>
+                        <td><?php echo $row["box_id"]; ?></td> <td><?php echo $row["county_name"] ?></td> <td><?php echo $row["district_name"] ?></td> <td><a href="javascript:void(0)" onclick="show_confirm(<?php echo $row["box_id"]; ?>)"><img src="../images/icons/edit.png" height="20px"/></a></td>
+			  
+                          </tr>
+                       
+
+
+                    <?php
+                    ++$count;
+                    }
+
+                    ?>
+                </table>
+                <?php
+                    }else{
+                        echo"<h2>No District Training Box Has Been Collected</h2><br/>";
+                    }
+                
+                       if(isset($_GET["UndoBoxIdTT"])){
+                        $updateResult="The Box Has Been Returned";
+                           
+                       }
+                        ?>
+                        
+  <h2 id="h2info"style="background:#bada66;"><?php echo $updateResult; $updateResult=""; ?></h2>
+     <form action="materials_collecting.php" method="POST">
+                <?php
+                
+                   $sql="select id from materials_printlist_history where status=1";
+                    $resultQ=mysql_query($sql); 
+                    while($row=mysql_fetch_array($resultQ)){
+                      $printlistId=$row["id"];
+                    }
+                    
+                    
+                    $sql="SELECT * from materials_packaging_history_ttb where printlist_id='$printlistId' AND collected=1";
+                    $resultB=mysql_query($sql);
+                    $count=0;
+                    $numRows=  mysql_affected_rows();
+                    if($numRows>=1){
+                    ?>
+                <table  class="table table-bordered table-condensed table-striped table-hover" >
+                    <caption><h2>Teacher Training Boxes</h2></caption>
+                    <tr>
+                        
+                        <th>Box Id</th>
+                        <th>County</th>
+                        <th>District</th>
+                        
+                        <th>Edit</th>
+                    </tr>
+                    <?php
+                    while($row=mysql_fetch_array($resultB)){
+                        ?>
+
+                    <tr>
+                        <td><?php echo $row["box_id"]; ?></td> <td><?php echo $row["county_name"] ?></td> <td><?php echo $row["district_name"] ?></td> <td><a href="javascript:void(0)" onclick="show_confirm2(<?php echo $row["box_id"]; ?>)"><img src="../images/icons/edit.png" height="20px"/></a></td>
+			  
+                          </tr>
+                       
+
+
+                    <?php
+                    ++$count;
+                    }
+
+                    ?>
+                </table>
+                <?php
+                    }else{
+                        echo"<h2>No Teacher Training Box Has Been Collected</h2><br/>";
+                    }
+                ?>	
+	</form>
+               
+			
+                    </div>
+
+            </div>
+          </div>
+        </div>
+		
+
+<script>
+
+      $(document).find("input.num-only").keydown(function (e) {
+          // Allow: backspace, delete, tab, escape, enter and .
+          if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+               // Allow: Ctrl+A
+              (e.keyCode == 65 && e.ctrlKey === true) || 
+               // Allow: home, end, left, right
+              (e.keyCode >= 35 && e.keyCode <= 39)) {
+                   // let it happen, don't do anything
+                   return;
+          }
+          // Ensure that it is a number and stop the keypress
+          if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+              e.preventDefault();
+          }
+      });
+    
+$(function() {
+$( ".datepicker" ).datepicker({ dateFormat: "yy-mm-dd" });
+});
+
+
+  function show_confirm() {
+      if (confirm("Are you sure you want to delete?")) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+
+ function show_confirm(BoxId) {
+      if (confirm("Are you sure you want to Undo its Collecting Process?")) {
+        location.replace('?UndoBoxIdDT=' + BoxId);
+      } else {
+        return false;
+      }
+    }
+     function show_confirm2(BoxId) {
+      if (confirm("Are you sure you want to Undo its Collecting Process?")) {
+        location.replace('?UndoBoxIdTT=' + BoxId);
+      } else {
+        return false;
+      }
+    }
+</script>
