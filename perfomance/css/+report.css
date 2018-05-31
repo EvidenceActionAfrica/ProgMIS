@@ -1,0 +1,331 @@
+
+.divMain{
+  width: 100%; 
+  min-width: 800px;
+  margin: 0px 0px; 
+  padding: 0px; 
+  background: #E7E3E0; 
+  min-height: 500px;
+  min-width: 1000px;
+  float: left;
+ }
+.divMain .divBody {
+  width: 83%;
+  margin: 0px 0px; 
+  padding-left: 15px; 
+  background-color: #E7E3E0; 
+  min-height: 500px;
+  float: left;
+}
+.clrBth {
+  clear: both;
+}
+.drpGen {
+	height: 33px;
+}
+.btnGen {
+	padding: 5px 25px;
+	font-size: 14px;
+	border-radius: 4px;
+}
+.btnAdpYrMth {
+	color: #fff;
+	background-color: #3276b1;
+	border-color: #285e8e;
+}
+.btnAdpYrMthProg {
+	color: #fff;
+	background-color: #3276b1;
+	border-color: #285e8e;
+}
+.btnGenPDF {
+	color: #fff;
+	background-color: red;
+	border-color: #285e8e;
+	font-weight: bold;
+}
+.divHeader {
+	width: 100%;
+	overflow: hidden;
+	margin: auto; /*Use margin: auto;, to horizontally center an element within its container. The element will then take up the specified width, and the remaining space will be split equally between the two margins*/
+	max-height: 130px;
+	/*background-color: green;*/
+}
+.divTitle {
+	width: 80%;
+	font-size: 3.25em;
+	font-weight: bold;
+	font-family: "TSTAR Mono Round";
+	text-decoration: underline;
+	float: left; /*use this property to place "divTitle" within "divHeader" along the same top margin*/
+	/*background-color: red;*/
+}
+.divImage {
+	width: 20%;
+	float: right;
+	margin-right: 0px;
+	float: left; /*use this property to place "divImage" within "divHeader" along the same top margin*/
+	/*background-color: yellow;*/
+}
+.sectionHeader {
+	color: black;
+	background-color: #A8A8A8;
+	padding: 10px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin-top: 15px;
+	clear: both;
+	font-size: 2.00em;
+	font-family: "TSTAR Mono Round";
+}
+.divHrzRow {
+	overflow: auto;
+}
+.divHrzLeft {
+	width: 45%;
+	height: 91px;
+	margin-left: 0px;
+	float: left;
+	font-size: 1.50em;
+	font-weight: bold;
+	font-family: "TSTAR Mono Round";
+	/*background-color: pink;*/
+}
+.divHrzRight {
+	width: 45%;
+	height: 91px;
+	margin-left: 99px;
+	float: left;
+	/*background-color: magenta;*/
+}
+.grpBarGrph {
+	clear: all;
+	overflow: auto;
+}
+.verM1 {
+	float: left;
+	margin: 5px;
+	width: 30%;
+	height: 310px;
+	margin: 5px;
+	text-align: center;
+	vertical-align: text-top;
+	/*border-style: solid;
+	border-width: 1px;*/
+	/*background-color: red;*/
+}
+.verM2 {
+	float: left;
+	margin: 5px;
+	width: 30%;
+	height: 310px;
+	margin: 5px;
+	text-align: center;
+	vertical-align: text-top;
+	/*border-style: solid;
+	border-width: 1px;*/
+	/*background-color: red;*/
+}
+.verM3 {
+	float: left;
+	margin: 5px;
+	width: 30%;
+	height: 310px;
+	margin: 5px;
+	text-align: center;
+	vertical-align: text-top;
+	/*border-style: solid;
+	border-width: 1px;*/
+	/*background-color: red;*/
+}
+.divAdoptionTrend {
+	float: right;
+	height: 350px;
+	width: 640px;
+	font-size: 1.50em;
+	font-weight: bold;
+	font-family: "TSTAR Mono Round";
+	/*border-style: solid;
+	border-width: 1px;*/
+	/*background-color: red;*/
+}
+#divYrMth {
+	width: 74%;
+	margin-left: 20px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	float: left;
+	/*background-color: red;*/
+}
+#divGenPDF {
+	width: 18%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	float: left;
+	/*background-color: purple;*/
+}
+#divPrntPage {
+	width: 92%;
+	margin-left: 20px;
+	background-color: #FFF;
+	padding: 10px;
+	overflow: auto;
+}
+#divHundred {
+	width: 46.5%;
+	margin-left: 0px;
+	text-align: right;
+	font-weight: bold;
+	font-family: "TSTAR Mono Round";
+	/*background-color:red;*/
+}
+#divLine {
+	color: black;
+	position: absolute;
+	margin-left: 447px;
+	margin-top: 3px;
+	height: 290px;
+	border-left: 1px dashed;
+}
+#divAdptMeter, #divInstMeter, #divPpleMeter {
+	color: black;
+	width: 99.7%;
+	height: 60px;
+	position: relative;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #FFF;
+}
+#divAdptBar, #divInstBar, #divPpleBar {
+	height: 58px;
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 1.5em;
+	background-color: #EF637D;
+}
+#divAdptInfo, #divInstInfo, #divPpleInfo {
+	padding: 10px;
+	width: 99.7%;
+	height: 60px;
+	overflow: auto;
+	margin-top: 30px;
+	border-radius: 12px 12px 12px 12px;
+	text-align: center;
+	font-size: 0.93em;
+	font-weight: bold;
+	font-family: "TSTAR Mono Round";
+	/*word wrap long text within <div> for multiple browsers*/
+	white-space: pre-wrap;      /* CSS3 */   
+	white-space: -moz-pre-wrap; /* Firefox */    
+	white-space: -pre-wrap;     /* Opera <7 */   
+	white-space: -o-pre-wrap;   /* Opera 7 */    
+	word-wrap: break-word;      /* IE */
+	background-color: #A8A8A8;
+}
+#barM1, #barM2, #barM3 {
+	height: 240px;
+	width:100px; 
+	margin-left: 2px;
+	background-color: #FFF;
+    position:relative;
+	position: absolute;
+	top: 415px;
+	bottom: -70px;
+	/*border-style: solid;
+	border-width: 1px;*/
+}   
+#mtrM1, #mtrM2, #mtrM3 {
+	background-color: #EF637D;
+	width:98px;
+    bottom:0;
+    position:absolute;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+#divPromoters {
+	float: left;
+	margin-left: 0px;
+	height: 330px;
+	width: 330px;
+	font-size: 1.50em;
+	font-weight: bold;
+	font-family: "TSTAR Mono Round";
+	/*border-style: solid;
+	border-width: 1px;*/
+	/*background-color: red;*/
+}
+#divChlorineUsage {
+	float: left;
+	margin-left: 0px;
+	height: 330px;
+	width: 330px;
+	font-size: 1.50em;
+	font-weight: bold;
+	font-family: "TSTAR Mono Round";
+	/*border-style: solid;
+	border-width: 1px;*/
+	/*background-color: yellow;*/
+}
+#divRecordedIssues {
+	float: left;
+	margin-left: 0px;
+	height: 330px;
+	width: 330px;
+	font-size: 1.50em;
+	font-weight: bold;
+	font-family: "TSTAR Mono Round";
+	/*border-style: solid;
+	border-width: 1px;*/
+	/*background-color: blue;*/
+}
+#divAdptRate {
+	float: left;
+	margin-left: 0px;
+	height: 350px;
+	width: 350px;
+	font-size: 1.50em;
+	font-weight: bold;
+	font-family: "TSTAR Mono Round";
+	/*border-style: solid;
+	border-width: 1px;*/
+	/*background-color: red;*/
+}
+#divPiePromoters {
+	margin-left: 1px;
+	/*the width and height properties are defined within javascript*/
+	/*background-color: orange;*/
+}
+#divPieChloUse {
+	margin-left: 1px;
+	/*the width and height properties are defined within javascript*/
+	/*background-color: orange;*/
+}
+#divPieRecIssue {
+	margin-left: 1px;
+	/*the width and height properties are defined within javascript*/
+	/*background-color: orange;*/
+}
+#divVertBars {
+	margin-left: 1px;
+	height: 319px;
+	width: 348px;
+	/*border-style: solid;
+	border-width: 1px;*/
+	/*background-color: orange;*/
+}
+#divLineGraph {
+	margin-left: 1px;
+	height: 317px;
+	width: 638px;
+	/*background-color: yellow;*/
+}
+#divDataError {
+  color: red;
+  font-size: 1.5em;
+  padding: 50px;
+}

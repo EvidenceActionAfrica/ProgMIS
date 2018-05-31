@@ -1,0 +1,191 @@
+.contentMain .contentBody{
+	width: 83%;
+	margin: 0px; 
+	padding-left: 15px; 
+	background-color: #E7E3E0; 
+	min-height: 500px;
+	float: left;
+}
+.grpBarGrph {
+	clear: all;
+	overflow: auto;
+}
+.hrzLeft {
+	float: left;
+	width: 45%;
+	height: 75px;
+	margin: 5px;
+	visibility: hidden;
+}
+.hrzRight {
+	padding-top: 1px;
+	float: left;
+	width: 45%;
+	height: 44px;
+	margin: 5px;
+	margin-left: -90px;
+}
+.verM1 {
+	float: left;
+	margin: 5px;
+	width: 15%;
+	height: 230px;
+	margin: 5px;
+}
+.verM2 {
+	float: left;
+	margin: 5px;
+	width: 15%;
+	height: 230px;
+	margin: 5px;
+}
+.verM3 {
+	float: left;
+	margin: 5px;
+	width: 15%;
+	height: 230px;
+	margin: 5px;
+}
+.line_text {
+	clear: both;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: black;
+}
+.hldrInstll {
+	border-color: black;
+	background-color: white;
+	border-width: 1px;
+	padding: 15px;
+	border-style: solid;
+	height: 60px;
+	overflow: auto;
+	padding-left: 37px;
+	margin-top: 1px;
+}
+.hldrPplSvd {
+	border-color: black;
+	background-color: white;
+	border-width: 1px;
+	padding: 15px;
+	border-style: solid;
+	height: 60px;
+	overflow: auto;
+	padding-left: 37px;
+	margin-top: 1px;
+}
+.hdrHorizBar {
+	color: #FFF;
+	background-color: #00F;
+	padding: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 1.4em;
+	margin-top: 10px;
+	clear: left;
+}
+
+.hdrHorizBar {
+  color: #FFF;
+  background-color: #00F;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 1.4em;
+  margin-top: 10px;
+  clear: left;
+  margin: 5px;
+}
+hr {
+	background: black; 
+	width: 75%; 
+	height: 1px;
+}
+#column-right {
+     border-right: 1px solid #dddddd;
+}
+#border-bottom {
+  border-bottom: 1pt solid #dddddd;
+}
+#barAdpt, #barInstll, #barPplSvd {
+	color: black;
+	width: 80%;
+	height: 60px;
+	text-align: center;
+	font-size: 1.1em;
+	position: relative;
+	background-color: white;
+	visibility: hidden;
+	margin-top: 2px;
+	border-style: solid;
+	border-width: 1px;
+}
+#mtrAdpt, #mtrInstll, #mtrPplSvd {
+	background-color: #F58427;
+	height: 58px;
+	margin: 0;
+	padding-top: 16px;
+	position: absolute;
+	left: 0;
+	width: 0px;
+	font-weight: bold;
+	font-size: 1.5em;
+	/*float: left;*/
+	/*  border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;*/
+}
+#ttlAdpt, #ttlInstll, #ttlPplSvd {
+	font-size: 1.25em;
+	font-weight: bold;
+	list-style: disc;
+}
+#tgtInstll, #tgtPplSvd {
+	font-size: 1.25em;
+}
+#barM1, #barM2, #barM3 {
+	height:200px;
+	width:100px; 
+	background-color:#FABF8F;
+    position:relative;
+	border-style: solid;
+	border-width: 1px;
+}   
+#mtrM1, #mtrM2, #mtrM3 {
+	background-color:#F58427;
+	width:98px;
+    bottom:0;
+    position:absolute;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+#top_line_container {
+	width: 5%;
+	text-align: center;
+	position: relative;
+	left: 14.6%;
+	z-index: 1;
+}
+#top_line_mark {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	bottom: 0;
+	left: 42%;
+	top: 29px;
+	height: 72px;
+	border-left: 1px dashed #00F;
+}
+#prtReport {
+	/*width: 90%;*/
+	width: 1000px;
+	margin-left: 20px;
+	background-color: #FFF;
+	padding: 10px;
+	overflow: auto;
+	/*zoom: 0.7;*/
+	/*width: 50%;
+	margin: 0 auto;*/
+}

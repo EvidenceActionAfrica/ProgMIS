@@ -1,0 +1,35 @@
+.sBase {
+    OVERFLOW: hidden; WIDTH: 100%; POSITION: relative; HEIGHT: 100%
+}
+.sHeader {
+    Z-INDEX: 3; POSITION: absolute; BACKGROUND-COLOR: #E7E3E0
+}
+.sHeaderInner {
+    POSITION: relative
+}
+.sHeaderInner TABLE {
+    TABLE-LAYOUT: fixed! important; WIDTH: 1px! important; BORDER-COLLAPSE: collapse! important; BACKGROUND-COLOR: #E7E3E0; 
+}
+.sFHeader {
+    Z-INDEX: 4; OVERFLOW: hidden; POSITION: absolute
+}
+.sFHeader TABLE {
+    TABLE-LAYOUT: fixed! important; WIDTH: 1px! important; BORDER-COLLAPSE: collapse! important; BACKGROUND-COLOR: #E7E3E0; 
+}
+.sData {
+    Z-INDEX: 2; OVERFLOW: auto; POSITION: absolute; BACKGROUND-COLOR: #E7E3E0
+}
+.sData TABLE {
+    TABLE-LAYOUT: fixed! important; WIDTH: 1px! important; BORDER-COLLAPSE: collapse! important; 
+}
+.sFData {
+    Z-INDEX: 1; POSITION: absolute; BACKGROUND-COLOR: #E7E3E0
+}
+.sFDataInner {
+    POSITION: relative
+}
+
+
+.fakeContainer {
+    overflow: hidden; width: 100%;  height: 360px;
+}
